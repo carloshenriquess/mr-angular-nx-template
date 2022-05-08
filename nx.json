@@ -1,7 +1,7 @@
 {
   "npmScope": "mr-angular-nx-workspace",
   "affected": {
-    "defaultBase": "main"
+    "defaultBase": "master"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular",
@@ -42,7 +42,9 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "skipTests": true,
+      "changeDetection": "OnPush"
     }
   },
   "defaultProject": "angular-template"

@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/angular-template/src",
-  "prefix": "mr-angular-nx-workspace",
+  "prefix": "mr",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -17,8 +17,11 @@
           "apps/angular-template/src/favicon.ico",
           "apps/angular-template/src/assets"
         ],
-        "styles": ["apps/angular-template/src/styles.scss"],
-        "scripts": []
+        "styles": ["apps/angular-template/src/styles/styles.scss"],
+        "scripts": [],
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/angular-template/src/styles"]
+        }
       },
       "configurations": {
         "production": {

@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
-    "start": "nx serve",
+    "dev": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "lint": "nx workspace-lint && nx lint angular-template --parallel --fix",
+    "format": "nx format:write",
+    "deps": "nx affected:dep-graph --base=HEAD",
+    "graph": "nx affected:dep-graph --base=HEAD",
+    "affected": "nx affected:dep-graph --base=HEAD",
+    "test": "nx test",
+    "ng": "nx",
+    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main"
   },
   "private": true,
   "dependencies": {
