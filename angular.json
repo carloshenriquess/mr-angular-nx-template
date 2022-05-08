@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "angular-template": "apps/angular-template",
-    "angular-template-e2e": "apps/angular-template-e2e"
+    "angular-template": "apps/angular-template"
   }
 }
